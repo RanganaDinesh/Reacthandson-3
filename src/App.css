@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgb(78, 224, 241) 4%,
+    rgba(245, 66, 66, 0.474) 57%,
+    rgba(239, 37, 37, 0.119) 80%
+  );
   min-height: 100vh;
+}
+
+.App {
+  /* width: 100vw;
+  height: 100vh; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#container,
+.form {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  text-shadow: 10px 10px 10px black;
+}
+
+label,
+input {
+  font-size: 20px;
+}
+
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(155, 151, 151);
+  border-radius: 20px;
+  background-color: rgb(197, 237, 241);
+}
+.num{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(127, 124, 124);
+  border-radius: 20px;
+  background-color: rgb(197, 237, 241);
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(153, 209, 214);
+}
+
+button:hover {
+  border: 2px solid rgb(242, 237, 237);
+  box-shadow: 0 0 2px 2px rgb(241, 248, 249);
+  background-color: rgb(129, 233, 240);
+}
+
+#display-form-data {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  border: 2px solid green;
+  width: 80vw;
+  height: fit-content;
+  background-color: rgb(147, 209, 215);
+}
+
+.display-data {
+  text-align: center;
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+  margin: 15px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(255, 168, 182);
+  font-size: 20px;
 }
