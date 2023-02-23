@@ -71,7 +71,7 @@ button:hover {
   flex-flow: wrap;
   justify-content: space-around;
   border: 2px solid green;
-  width: 80vw;
+  width: 90%;
   height: fit-content;
   background-color: rgb(147, 209, 215);
 }
