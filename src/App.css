@@ -71,14 +71,14 @@ button:hover {
   flex-flow: wrap;
   justify-content: space-around;
   border: 2px solid green;
-  width: 80vw;
+  width: 90%;
   height: fit-content;
   background-color: rgb(147, 209, 215);
 }
 
 .display-data {
   text-align: center;
-  width: 400px;
+  width: 500px;
   height: fit-content;
   padding: 20px;
   margin: 15px;
@@ -86,5 +86,5 @@ button:hover {
   border: 2px solid black;
   border-radius: 20px;
   background-color: rgb(255, 168, 182);
-  font-size: 20px;
+  font-size: 15px;
 }
